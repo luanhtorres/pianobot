@@ -1,1 +1,7 @@
-# pianobot
+Criação de um bot (auto clicker) para automatizar os cliques em um jogo de piano da internet.
+
+O jogo utilizado está no código, no modo Endurance, onde aparecem quadrados pretos e quadrados brancos, e o intuito do jogo é clicar nos quadrados pretos o mais rapido possivel. 
+
+Explorando pela biblioteca do pyautogui eu decidi fazer um auto clicker que identificasse os quadrados pretos e os quadrados brancos e clicasse apenas nos pretos o mais rápido possivel. Para isso, eu tive que identificar e armazenar a localização x e y dos quadrados que aparecem na tela, e identifiquei qual era a coloração do pixel naquele determinado local. Após, criei uma condicional que se o pixel daquele local fosse de uma determinada cor (no caso preto/cinza escuro) o programa iria clicar. Caso fosse qualquer outra cor, iria ignorar (no caso nesse jogo só tinham preto e branco). Fiz isso para todos os pixels na tela onde apareciam os quadrados, e criei a mesma condicional para todos. Dessa forma, o bot estava pronto. Para não ficar rodando infinitamente e não conseguir para-lo, criei um 'while' onde programei para caso a tecla 'q' do meu teclado fosse apertada, o programa iria parar.
+
+O objetivo desse bot foi para diversão e estudo, pois estava descobrindo a biblioteca pyautogui. Importante ressaltar que existem formas muito mais fáceis e simples de fazer isso, e que meu código talvez não esteja o mais bem escrito, pois ainda estou estudando e aprendendo.
